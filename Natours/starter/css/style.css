@@ -66,7 +66,7 @@ body{
     font-size: 20px;
     font-weight: 700;
     animation-name: move-in-right;
-    animation-duration: 5s;
+    animation-duration: 2s;
 }
 @keyframes move-in-left {
     0% {
@@ -144,6 +144,17 @@ body{
 
 
 .btn-animated {
-    animation: moveInBottom .5s ease-out .75s;
+    animation: moveInBottom 1s ease-out .75s;
     animation-fill-mode: backwards;
+}
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
